@@ -8,7 +8,7 @@ router.get('/', function (req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 
-router.get('/SRCFLAG', function (req, res) {
+router.get('/test', function (req, res) {
     const test = { "NetW0rk":"4R3nS1c"};
     res.status(200).json(test);
 });

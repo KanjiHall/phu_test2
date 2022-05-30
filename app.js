@@ -15,4 +15,6 @@ router.get('/SRCFLAG', function (req, res) {
 
 app.use('/', router);
 app.use(express.json()) // To parse the incoming requests with JSON payloads
-app.listen(8080);
+app.listen(process.env.PORT || 8080, '0.0.0.0', () => {
+    console.log("Server is running.");
+  });

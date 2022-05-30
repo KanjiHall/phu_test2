@@ -12,8 +12,8 @@ router.get('/', function (req, res) {
 //     const test = { "NetW0rk":"4R3nS1c"};
 //     res.status(200).json(test);
 // });
-router.get('/test', function (req, res) {
-    res.send("srcflag:{abc}");
+router.get('/SRCFLAG', function (req, res) {
+    res.send("SRCFLAG{n0thingToGet}");
 });
 
 app.use('/', router);
